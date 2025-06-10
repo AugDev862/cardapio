@@ -1,0 +1,49 @@
+body {background: rgb(167, 114, 45)};
+    
+    
+h2{border: 5px solid powderblue;
+    padding: 5px; 
+    margin: 5px;
+    border-style: groove;
+}
+
+th, td {
+    border: 1px solid rgb(167, 114, 45);
+    border-color: red;
+    background: blue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+td:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+div {
+  width:300px;
+  margin:auto;
+}
