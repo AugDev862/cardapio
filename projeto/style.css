@@ -11,7 +11,7 @@ nav {
 }
 
 
-ul {
+.liNav {
   list-style-type: none; 
   margin: 0;
   padding: 0;
@@ -23,7 +23,6 @@ ul {
   justify-content: left;
   align-items: center;
 }
-
 
 li {
     float: left;
@@ -46,24 +45,24 @@ body {
     background: rgb(255, 213, 157);
 }
 
-div {
+.conteudo {
     background-color: rgb(181, 135, 99);
     display: block;
-    height: 900px;
+    height: 1050px;
     width: 1800px ;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 15px;
-    border-radius: 15px;
+    border-radius: 15px; 
 }
 
 img {
-    height: 400px;
+    height: auto;
     width: 400px;
-    float: right;
-    display: flex;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
 }
 
 h1 {
@@ -77,3 +76,51 @@ h2 {
 section {
     height: 500px;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    gap: 20rem;
+}
+
+.textoheader {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: auto;
+
+}
+
+.alimentos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.alimento {
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    list-style-type: none; 
+    display: inline-block;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.infocardapio {
+    position: relative;
+    top: 60px;
+    text-align: center;
+}
+
+.alimento img {
+    height:60%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    border-radius: 10px ;
+
+}
+
