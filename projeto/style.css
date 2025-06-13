@@ -8,6 +8,7 @@ nav {
     align-items: center;
     letter-spacing: 3px;
     height:70px;
+    position: relative;
 }
 
 
@@ -20,15 +21,19 @@ nav {
   border-radius: 5px 5px 0px 0px;
   text-align: center;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-li {
-    float: left;
+.liNav .extra {
+    margin-right: auto;
+    left: 20px;
 }
 
-li a  {
+
+
+.liNav li a, .liNav li h2  {
     display:block; 
     color: white;
     text-align: center;
@@ -36,7 +41,7 @@ li a  {
     text-decoration: none;
 }
 
-li a:hover {
+.liNav li a:hover {
   background-color: #8f2626;
 }
 
@@ -106,7 +111,7 @@ section {
     list-style-type: none; 
     display: inline-block;
     margin-top: 100px;
-    border-radius: 10px;
+    border-radius: 10px ;
 }
 
 .infocardapio {
@@ -122,5 +127,9 @@ section {
     object-fit: cover;
     border-radius: 10px ;
 
+}
+
+footer {
+    background-color: rgb(107, 62, 38);
 }
 
