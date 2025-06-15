@@ -109,9 +109,17 @@ section {
     width: 250px;
     background-color: white;
     list-style-type: none; 
-    display: inline-block;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
     margin-top: 100px;
     border-radius: 10px ;
+}
+
+.imagem_container {
+    position: relative;
+    height: 60%;
+    width: 100%;
 }
 
 .infocardapio {
@@ -121,11 +129,31 @@ section {
 }
 
 .alimento img {
-    height:60%;
+    height:100%;
     width: 100%;
-    display: flex;
     object-fit: cover;
-    border-radius: 10px ;
+    border-radius: 10px 10px 0 0 ;
+
+}
+
+.texto_alimento {
+    position: absolute;
+    text-shadow: 2px 2px 4px rgba(0,0,0,1);
+    bottom: 8px;
+    left: 8px;
+    color: rgb(255, 255, 255);;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 30px;
+    font: bold;
+}
+
+.ingredientes {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.valor {
 
 }
 
