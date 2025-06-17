@@ -103,6 +103,8 @@ h2 {
 
 }
 
+
+
 .alimentos {
     display: flex;
     justify-content: center;
@@ -116,11 +118,13 @@ h2 {
     background-color: white;
     list-style-type: none; 
     display:flex;
-    overflow: hidden;
+    justify-content: space-between;
     flex-direction: column;
     margin-top: 100px;
     border-radius: 10px ;
+    box-sizing: border-box;
 }
+
 
 .imagem_container {
     position: relative;
