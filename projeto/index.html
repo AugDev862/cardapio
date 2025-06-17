@@ -10,14 +10,15 @@
     <nav>
         <ul class = "liNav">
             <li> <h2 class = "extra">404 - Fome Não Encontrada</h2></li>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#cardapio">Cardápio</a></li>
-            <li><a href="#contatos">Contatos</a></li>
+            <li class="menu">&#9776;</li>
+            <li class = "menu-item"><a href="#inicio">Início</a></li>
+            <li class = "menu-item"><a href="#cardapio">Cardápio</a></li>
+            <li class = "menu-item"><a href="#contatos">Contatos</a></li>
         </ul>
     </nav>
 
     <header id="inicio">
-        <section class="container">
+        <section style="height: 500px;" class="container">
             <div class="textoheader">
                 <h1 >Nós Fazemos Debug No Seu Apetite</h1>
                 <br>
@@ -37,83 +38,86 @@
     <section class = "conteudo">
 
         <h1 class= " infocardapio">Pratos</h1>
-    
-            <article >
-            <ul class = "alimentos"  >
-                <li class ="alimento">
-                    <div class = "imagem_container">
-                        <img src="imgs/Hambúrguer.jpg" alt="hambúrguer duplo, cheddar, bacon, alface,
-                        tomate e molho da casa no brioche.">
-                        <div class = "texto_alimento">Stack Overflow</div>
-                    </div>
-                    <div class="ingredientes">
-                        hambúrguer duplo, cheddar, bacon, alface,
-                        tomate e molho da casa no brioche.
-                    </div>
-                    <div class="valor">
-                        R$ 29,90
-                    </div>
-                </li>
-                <li class ="alimento">
-                    <div class = "imagem_container">
-                        <img src="imgs/stack overflow.jpg" alt="filé de frango empanado, molho de tomate, 
-                        queijo gratinado, arroz e fritas.">
-                        <div class = "texto_alimento">Kernel à Parmegiana</div>
-                    </div>
-                    <div class="ingredientes">
-                        filé de frango empanado, molho de tomate, 
-                        queijo gratinado, arroz e fritas.
-                    </div>
-                    <div class="valor">
-                        R$ 31,90
-                    </div>
-                </li>
-                <li class ="alimento">
-                    <div class = "imagem_container">
-                        <img src="imgs/Spaghetti.jpg" alt=" massa artesanal, molho de tomate rústico, almôndegas e manjericão.">
-                        <div class = "texto_alimento">Spaghetti.js</div>
-                    </div>
-                    <div class="ingredientes">
-                        massa artesanal, molho de tomate rústico, almôndegas e manjericão.
-                    </div>
-                    <div class="valor">
-                         R$ 27,90
-                    </div>
-                   
-                </li>
-                
-                <li class ="alimento">
-                    <div class = "imagem_container">
-                        <img src="imgs/Pacote de Feijão.jpg" alt="feijão tropeiro, farofa, arroz branco e ovo frito.">
-                        <div class = "texto_alimento">Pacote de Feijão</div>
-                    </div>
-                    <div class="ingredientes">
-                        feijão tropeiro, farofa, arroz branco e ovo frito.
-                    </div>
-                    <div class="valor">
-                         R$ 25,90
-                    </div>
+            <div class="carrosel-container">
+                <article >
+                <ul class = "alimentos"  >
+                    <li class ="alimento">
+                        <div class = "imagem_container">
+                            <img src="imgs/Hambúrguer.jpg" alt="hambúrguer duplo, cheddar, bacon, alface,
+                            tomate e molho da casa no brioche.">
+                            <div class = "texto_alimento">Stack Overflow</div>
+                        </div>
+                        <div class="ingredientes">
+                            hambúrguer duplo, cheddar, bacon, alface,
+                            tomate e molho da casa no brioche.
+                        </div>
+                        <div class="valor">
+                            R$ 29,90
+                        </div>
+                    </li>
+                    <li class ="alimento">
+                        <div class = "imagem_container">
+                            <img src="imgs/stack overflow.jpg" alt="filé de frango empanado, molho de tomate, 
+                            queijo gratinado, arroz e fritas.">
+                            <div class = "texto_alimento">Kernel à Parmegiana</div>
+                        </div>
+                        <div class="ingredientes">
+                            filé de frango empanado, molho de tomate, 
+                            queijo gratinado, arroz e fritas.
+                        </div>
+                        <div class="valor">
+                            R$ 31,90
+                        </div>
+                    </li>
+                    <li class ="alimento">
+                        <div class = "imagem_container">
+                            <img src="imgs/Spaghetti.jpg" alt=" massa artesanal, molho de tomate rústico, almôndegas e manjericão.">
+                            <div class = "texto_alimento">Spaghetti.js</div>
+                        </div>
+                        <div class="ingredientes">
+                            massa artesanal, molho de tomate rústico, almôndegas e manjericão.
+                        </div>
+                        <div class="valor">
+                            R$ 27,90
+                        </div>
                     
-                </li>
-                <li class ="alimento">
-                    <div class = "imagem_container">
-                        <img src="imgs/404 Not Cake.jpg" alt="brownie de chocolate, brigadeiro cremoso e sorvete de creme.">
-                        <div class = "texto_alimento">404 Not Cake</div>
-                    </div>
-                    <div class="ingredientes">
-                       brownie de chocolate, brigadeiro cremoso e sorvete de creme.
-                    </div>
-                    <div class="valor">
-                        R$ 18,90
-                    </div>
+                    </li>
                     
+                    <li class ="alimento">
+                        <div class = "imagem_container">
+                            <img src="imgs/Pacote de Feijão.jpg" alt="feijão tropeiro, farofa, arroz branco e ovo frito.">
+                            <div class = "texto_alimento">Pacote de Feijão</div>
+                        </div>
+                        <div class="ingredientes">
+                            feijão tropeiro, farofa, arroz branco e ovo frito.
+                        </div>
+                        <div class="valor">
+                            R$ 25,90
+                        </div>
+                        
+                    </li>
+                    <li class ="alimento">
+                        <div class = "imagem_container">
+                            <img src="imgs/404 Not Cake.jpg" alt="brownie de chocolate, brigadeiro cremoso e sorvete de creme.">
+                            <div class = "texto_alimento">404 Not Cake</div>
+                        </div>
+                        <div class="ingredientes">
+                        brownie de chocolate, brigadeiro cremoso e sorvete de creme.
+                        </div>
+                        <div class="valor">
+                            R$ 18,90
+                        </div>
+                        
 
-                </li>
-            </article>
+                    </li>
 
-            <h1 class= " infocardapio">Bebidas</h1>
+           
+                    </article>
 
-            </ul>
+                    <h1 class= " infocardapio">Bebidas</h1>
+
+                </ul>
+            </div>
 
             <article >
             <ul class = "alimentos"  >
@@ -216,6 +220,14 @@
             <img src="imgs/whatsapp.png" alt="logo do whatsapp" class="iconsocial">
         </div>
     </footer>
+    <script>
+    const nav = document.querySelector('.liNav');
+    const menu = document.querySelector('.menu');
+
+    menu.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
 
 </body>
 </html>

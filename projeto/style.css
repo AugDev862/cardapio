@@ -14,6 +14,10 @@ nav {
     z-index: 999;
 }
 
+header {
+    padding-top: 95px;
+}
+
 
 .liNav {
   list-style-type: none; 
@@ -56,13 +60,12 @@ body {
 .conteudo {
     background-color: rgb(181, 135, 99);
     display: block;
-    height: 1050px;
-    width: 1400px ;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 15px;
+    max-width: 100%;
+    width: 95%;
+    margin: 50px auto 15px auto;
     border-radius: 15px; 
+    box-sizing: border-box;
+    padding: 20px 40px;
 }
 
 .imglogo {
@@ -70,7 +73,6 @@ body {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     object-fit: cover;
 }
 
@@ -82,16 +84,14 @@ h2 {
     font-size: 30px;
 }
 
-section {
-    height: 500px;
-}
-
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 10px;
-    gap: 10rem;
+    gap: 40px;
+    height: 500px;
+    padding: 20px;
 }
 
 .textoheader {
@@ -107,6 +107,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .alimento {
@@ -185,6 +186,7 @@ footer {
     justify-content: space-between;
     color: white;
     border-radius: 60px 60px 0px 0px;
+    flex-direction: row;
 }
 
 .information {
@@ -233,4 +235,90 @@ footer {
     padding: 8px;
     width: 40px;
     height: 40px;
+}
+
+.information {
+    order: 1;
+}
+
+.social {
+    order: 2;
+} 
+
+.menu {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+}
+
+@media (max-width: 1106px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .textoheader {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imglogo {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .liNav{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .menu-item {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(107, 62, 38, 0);
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .liNav.active .menu-item {
+        display: block;
+    }
+
+    .extra {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .information {
+        order: 2;
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .social {
+        order: 1;
+        margin: 0 0 20px 0;
+        justify-content: center;
+        width: 100%;  
+    }
 }
